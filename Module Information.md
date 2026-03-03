@@ -34,6 +34,14 @@ It demonstrates core Laravel fundamentals including:
 
 Follow the steps below to run the project locally:
 
+Admin Login
+Email: admin@starlfinx.com
+Password: Admin123@starlfinx
+
+Sub Admin Login
+Email: subadmin@starlfinx.com
+Password: Subadmin123@starlfinx
+
 ### 1 Clone Repository
 
 ```bash
@@ -46,7 +54,7 @@ npm install
 cp .env.example .env
 php artisan key:generate
 
-DB_DATABASE=starlfinx
+DB_DATABASE=starlfinx_db
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 
@@ -54,13 +62,5 @@ php artisan migrate
 
 php artisan db:seed --class=AdminSeeder
 php artisan db:seed --class=SubAdminSeeder
-
-Admin Login
-Email: admin@starlfinx.com
-Password: Admin123@starlfinx
-
-Sub Admin Login
-Email: subadmin@starlfinx.com
-Password: Subadmin123@starlfinx
 
 php artisan serve
